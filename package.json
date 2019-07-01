@@ -1,6 +1,6 @@
 {
   "name": "@aarnet/jupyterlab-ext-aarnet-help",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "Add Help button to jupyterlab help menu, to link to aarnet support page",
   "keywords": [
     "jupyter",
@@ -30,9 +30,9 @@
     "watch": "tsc -w"
   },
   "dependencies": {
-    "@jupyterlab/application": "^0.19.1",
-    "@jupyterlab/apputils": "^0.19.1",
-    "@jupyterlab/mainmenu": "^0.8.1"
+    "@jupyterlab/application": "^1.0.0",
+    "@jupyterlab/apputils": "^1.0.0",
+    "@jupyterlab/mainmenu": "^1.0.0"
   },
   "devDependencies": {
     "rimraf": "^2.6.1",
