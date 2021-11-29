@@ -1,6 +1,6 @@
 {
   "name": "@aarnet/jupyterlab-ext-aarnet-help",
-  "version": "2.0.1",
+  "version": "3.0.0",
   "description": "Add Help button to jupyterlab help menu, to link to aarnet support page",
   "keywords": [
     "jupyter",
