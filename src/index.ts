@@ -14,8 +14,8 @@ import '../style/index.css';
 
 namespace CommandIDs {
   export const help = 'aarnet:help';
+  export const signet = 'aarnet:signet';
 }
-
 
 /**
  * Initialization data for the jupyterlab-ext-aarnet-help extension.
@@ -28,6 +28,7 @@ const extension: JupyterFrontEndPlugin<void> = {
     IMainMenu
   ],
   activate: (app: JupyterFrontEnd, palette: ICommandPalette, mainMenu: IMainMenu) => {
+    //KB
     app.commands.addCommand(CommandIDs.help, {
       label: 'CloudStor SWAN Support',
       execute: () => {
@@ -35,6 +36,14 @@ const extension: JupyterFrontEndPlugin<void> = {
       }
     });
     mainMenu.helpMenu.addGroup([{ command: CommandIDs.help }], 20);
+    //SIGnet
+    app.commands.addCommand(CommandIDs.signet, {
+      label: 'SIGnet - SWAN Special Interest Group',
+      execute: () => {
+        window.open('https://signet.aarnet.edu.au/','_blank');
+      }
+    });
+    mainMenu.helpMenu.addGroup([{ command: CommandIDs.signet }], 20);
   }
 };
 
